@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+<!-- 配置依赖对象 -->
+	<bean id="friend" class="testIOC.bean">
+		<property name="name" value="小明"/>
+	</bean>
+
+<!-- 配置实力对象 -->
+	<bean id="am" class="testIOC.bean">
+		<property name="name">
+			<value>鹏鹏</value>
+		</property>
+		<property name="uid" value="1"/>
+		<property name="steam">
+			<list>
+				<value>st1</value>
+				<value>st2</value>
+				<value>st3</value>
+			</list>
+		</property>
+		<property name="slist">
+			<list>
+				<value>sl1</value>
+				<value>sl2</value>
+				<value>sl3</value>
+			</list>
+		</property>
+		<property name="sset">
+			<set>
+				<value>ss1</value>
+				<value>ss2</value>
+				<value>ss3</value>
+			</set>
+		</property>
+		<property name="smap">
+			<map>
+				<entry key="sm1" value="xiaoma"/>
+				<entry key="sm2" value="xiaomb"/>
+				<entry key="sm3" value="xiaomc"/>
+			</map>
+		</property>
+		<property name="friend" ref="friend"/>
+	</bean>
+	
+</beans>
