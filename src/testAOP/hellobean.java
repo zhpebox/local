@@ -11,7 +11,7 @@ public class hellobean implements inter {
 		if(!this.what.equals("")){
 			System.out.println("你好 "+this.what);
 		}else{
-			System.out.println("你好！");
+			System.out.println("asdf");
 		}
 	}
 
