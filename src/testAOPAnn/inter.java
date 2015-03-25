@@ -1,4 +1,4 @@
-package testAOP;
+package testAOPAnn;
 
 public interface inter {
 

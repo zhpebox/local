@@ -1,5 +1,5 @@
-package testAOP;
-
+package testAOPAnn;
+//testAOPAnn.hellobean
 public class hellobean implements inter {
 	
 	private String what ;

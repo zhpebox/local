@@ -7,6 +7,6 @@ public class test {
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("testAOP/AOPBean.xml");
 		inter it = (inter)ac.getBean("proxybean");
-		it.saywhat();
+		it.saywhat("select * from user where userId =  '"+"wohaha"+"' ","AAAAA");
 	}
 }
